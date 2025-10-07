@@ -55,45 +55,38 @@ Visualization: Matplotlib-based plots of experimental results
 Detailed Reports: In-depth analysis and documentation
 
 
-📁mcts-reasoning-explorer/
-│
-├── README.md                       # This file
-├── requirements.txt                # Python dependencies
-├── LICENSE                         # MIT License
-├── .gitignore                      # Git ignore rules
-│
-├── task1_mcts_implementation/      # Core MCTS Implementation
-│   ├── __init__.py
-│   ├── mcts_core.py               # MCTS algorithm
-│   ├── environments.py            # Game environments
-│   ├── test_mcts.py              # Unit tests (18 tests)
-│   ├── experiments.py            # Performance experiments
-│   ├── visualize.py              # Visualization tools
-│   ├── quick_test.py             # Quick sanity check
-│   └── results/                  # Experimental outputs
-│       ├── exp1_simulation_budget.png
-│       ├── exp2_exploration_constant.png
-│       ├── exp3_maze_solving.png
-│       └── *.json                # Raw data
-│
-├── task2_llm_mcts/                # LLM-MCTS Integration
-│   ├── __init__.py
-│   ├── llm_interface.py          # Multi-provider API wrapper
-│   ├── llm_mcts.py               # MCTS for text reasoning
-│   ├── tasks.py                  # Problem definitions
-│   ├── evaluators.py             # Answer evaluation
-│   ├── run_experiments.py        # Experiment runner
-│   └── results/                  # LLM-MCTS outputs
-│       ├── comparison.png        # Baseline vs MCTS
-│       └── results.json          # Experimental data
-│
-├── docs/                          # Documentation
-│   ├── task1_report.md           # MCTS report
-│   └── task2_report.md           # LLM-MCTS report
-│
-└── notebooks/                     # Jupyter notebooks
-    ├── task1_demo.ipynb          # Interactive demo
-    └── task2_analysis.ipynb      # Result analysis
+📁## 📁 Project Structure
+
+### Root Files
+- `README.md` - Project documentation
+- `requirements.txt` - Python dependencies
+- `LICENSE` - MIT License
+- `.gitignore` - Git ignore rules
+
+### Task 1: Core MCTS Implementation (`task1_mcts_implementation/`)
+- `mcts_core.py` - MCTS algorithm (MCTSNode, MCTS classes)
+- `environments.py` - Game environments (TicTacToe, SimpleMaze)
+- `test_mcts.py` - Unit tests (18 tests, all passing)
+- `experiments.py` - Performance evaluation experiments
+- `visualize.py` - Tree and result visualization
+- `quick_test.py` - Quick sanity check
+- `results/` - Experimental outputs (PNG plots, JSON data)
+
+### Task 2: LLM-MCTS Integration (`task2_llm_mcts/`)
+- `llm_interface.py` - Multi-provider LLM API wrapper
+- `llm_mcts.py` - MCTS adapted for text reasoning
+- `tasks.py` - Math problem definitions
+- `evaluators.py` - Answer correctness evaluation
+- `run_experiments.py` - Main experiment runner
+- `results/` - LLM-MCTS outputs (comparison plots, JSON data)
+
+### Documentation (`docs/`)
+- `task1_report.md` - Complete MCTS implementation report (20+ pages)
+- `task2_report.md` - LLM-MCTS integration report
+
+### Notebooks (`notebooks/` - Optional)
+- `task1_demo.ipynb` - Interactive MCTS demonstration
+- `task2_analysis.ipynb` - LLM-MCTS result analysis
 
 🚀 Installation
 Prerequisites
