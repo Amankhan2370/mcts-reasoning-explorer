@@ -1,4 +1,4 @@
-# MCTS-UCT with LLM Proxy: Assignment Implementation
+# MCTS-UCT with LLM: Assignment Implementation
 
 ## Overview
 This repository contains a simple implementation of Monte Carlo Tree Search with Upper Confidence Bound applied to Trees (MCTS-UCT), guided by a mock Large Language Model (LLM) proxy scoring function. The implementation replicates a key idea from the NeurIPS 2023 paper *"Large Language Models as Commonsense Knowledge for Large-Scale Task Planning"*.
