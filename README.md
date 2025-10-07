@@ -55,46 +55,45 @@ Visualization: Matplotlib-based plots of experimental results
 Detailed Reports: In-depth analysis and documentation
 
 
-📁``` mcts-reasoning-explorer/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── .gitignore
-
-├── src/
-│   ├── task1_mcts/
-│   │   ├── __init__.py
-│   │   ├── mcts_core.py
-│   │   ├── environments.py
-│   │   ├── experiments.py
-│   │   ├── visualize.py
-│   │   ├── quick_test.py
-│   │   └── test_mcts.py
-│   └── task2_llm_mcts/
-│       ├── __init__.py
-│       ├── llm_interface.py
-│       ├── llm_mcts.py
-│       ├── tasks.py
-│       ├── evaluators.py
-│       └── run_experiments.py
-
-├── results/
-│   ├── mcts/
-│   │   ├── exp1_simulation_budget.png
-│   │   ├── exp2_exploration_constant.png
-│   │   ├── exp3_maze_solving.png
-│   │   └── *.json
-│   └── llm_mcts/
-│       ├── comparison.png
-│       └── results.json
-
-├── docs/
-│   ├── task1_report.md
-│   └── task2_report.md
-
-└── notebooks/
-    ├── task1_demo.ipynb
-    └── task2_analysis.ipynb
+📁mcts-reasoning-explorer/
+│
+├── README.md                       # This file
+├── requirements.txt                # Python dependencies
+├── LICENSE                         # MIT License
+├── .gitignore                      # Git ignore rules
+│
+├── task1_mcts_implementation/      # Core MCTS Implementation
+│   ├── __init__.py
+│   ├── mcts_core.py               # MCTS algorithm
+│   ├── environments.py            # Game environments
+│   ├── test_mcts.py              # Unit tests (18 tests)
+│   ├── experiments.py            # Performance experiments
+│   ├── visualize.py              # Visualization tools
+│   ├── quick_test.py             # Quick sanity check
+│   └── results/                  # Experimental outputs
+│       ├── exp1_simulation_budget.png
+│       ├── exp2_exploration_constant.png
+│       ├── exp3_maze_solving.png
+│       └── *.json                # Raw data
+│
+├── task2_llm_mcts/                # LLM-MCTS Integration
+│   ├── __init__.py
+│   ├── llm_interface.py          # Multi-provider API wrapper
+│   ├── llm_mcts.py               # MCTS for text reasoning
+│   ├── tasks.py                  # Problem definitions
+│   ├── evaluators.py             # Answer evaluation
+│   ├── run_experiments.py        # Experiment runner
+│   └── results/                  # LLM-MCTS outputs
+│       ├── comparison.png        # Baseline vs MCTS
+│       └── results.json          # Experimental data
+│
+├── docs/                          # Documentation
+│   ├── task1_report.md           # MCTS report
+│   └── task2_report.md           # LLM-MCTS report
+│
+└── notebooks/                     # Jupyter notebooks
+    ├── task1_demo.ipynb          # Interactive demo
+    └── task2_analysis.ipynb      # Result analysis
 
 🚀 Installation
 Prerequisites
