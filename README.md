@@ -55,48 +55,47 @@ Visualization: Matplotlib-based plots of experimental results
 Detailed Reports: In-depth analysis and documentation
 
 
-📁mcts-reasoning-explorer/
-├── README.md                  # Project overview & usage guide
-├── LICENSE                    # MIT License
-├── requirements.txt           # Python dependencies
-├── .gitignore                 # Ignore patterns
-│
+📁### Project Structure
+mcts-reasoning-explorer/
+├── README.md # Project overview & usage guide
+├── LICENSE # MIT License
+├── requirements.txt # Python dependencies
+├── .gitignore # Ignore patterns
+
 ├── src/
-│   ├── task1_mcts/
-│   │   ├── __init__.py
-│   │   ├── mcts_core.py       # MCTSNode, MCTS classes
-│   │   ├── environments.py    # Game environments (TicTacToe, SimpleMaze)
-│   │   ├── experiments.py     # Evaluation experiments
-│   │   ├── visualize.py       # Visualization
-│   │   ├── quick_test.py      # Sanity checks
-│   │   └── test_mcts.py       # Unit tests
-│   │
-│   └── task2_llm_mcts/
-│       ├── __init__.py
-│       ├── llm_interface.py   # Multi-provider LLM API
-│       ├── llm_mcts.py        # LLM-based MCTS logic
-│       ├── tasks.py           # Math problem definitions
-│       ├── evaluators.py      # Answer evaluation
-│       └── run_experiments.py # Main experiment runner
-│
+│ ├── task1_mcts/
+│ │ ├── init.py
+│ │ ├── mcts_core.py
+│ │ ├── environments.py
+│ │ ├── experiments.py
+│ │ ├── visualize.py
+│ │ ├── quick_test.py
+│ │ └── test_mcts.py
+│ └── task2_llm_mcts/
+│ ├── init.py
+│ ├── llm_interface.py
+│ ├── llm_mcts.py
+│ ├── tasks.py
+│ ├── evaluators.py
+│ └── run_experiments.py
+
 ├── results/
-│   ├── mcts/
-│   │   ├── exp1_simulation_budget.png
-│   │   ├── exp2_exploration_constant.png
-│   │   ├── exp3_maze_solving.png
-│   │   └── *.json             # Raw experiment data
-│   │
-│   └── llm_mcts/
-│       ├── comparison.png
-│       └── results.json
-│
+│ ├── mcts/
+│ │ ├── exp1_simulation_budget.png
+│ │ ├── exp2_exploration_constant.png
+│ │ ├── exp3_maze_solving.png
+│ │ └── *.json
+│ └── llm_mcts/
+│ ├── comparison.png
+│ └── results.json
+
 ├── docs/
-│   ├── task1_report.md        # MCTS implementation report
-│   └── task2_report.md        # LLM-MCTS report
-│
+│ ├── task1_report.md
+│ └── task2_report.md
+
 └── notebooks/
-    ├── task1_demo.ipynb       # MCTS demo
-    └── task2_analysis.ipynb   # LLM-MCTS analysis
+├── task1_demo.ipynb
+└── task2_analysis.ipynb
 
 🚀 Installation
 Prerequisites
