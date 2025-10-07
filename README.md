@@ -55,47 +55,46 @@ Visualization: Matplotlib-based plots of experimental results
 Detailed Reports: In-depth analysis and documentation
 
 
-📁### Project Structure
-mcts-reasoning-explorer/
-├── README.md # Project overview & usage guide
-├── LICENSE # MIT License
-├── requirements.txt # Python dependencies
-├── .gitignore # Ignore patterns
+📁### mcts-reasoning-explorer/
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── .gitignore
 
 ├── src/
-│ ├── task1_mcts/
-│ │ ├── init.py
-│ │ ├── mcts_core.py
-│ │ ├── environments.py
-│ │ ├── experiments.py
-│ │ ├── visualize.py
-│ │ ├── quick_test.py
-│ │ └── test_mcts.py
-│ └── task2_llm_mcts/
-│ ├── init.py
-│ ├── llm_interface.py
-│ ├── llm_mcts.py
-│ ├── tasks.py
-│ ├── evaluators.py
-│ └── run_experiments.py
+│   ├── task1_mcts/
+│   │   ├── __init__.py
+│   │   ├── mcts_core.py
+│   │   ├── environments.py
+│   │   ├── experiments.py
+│   │   ├── visualize.py
+│   │   ├── quick_test.py
+│   │   └── test_mcts.py
+│   └── task2_llm_mcts/
+│       ├── __init__.py
+│       ├── llm_interface.py
+│       ├── llm_mcts.py
+│       ├── tasks.py
+│       ├── evaluators.py
+│       └── run_experiments.py
 
 ├── results/
-│ ├── mcts/
-│ │ ├── exp1_simulation_budget.png
-│ │ ├── exp2_exploration_constant.png
-│ │ ├── exp3_maze_solving.png
-│ │ └── *.json
-│ └── llm_mcts/
-│ ├── comparison.png
-│ └── results.json
+│   ├── mcts/
+│   │   ├── exp1_simulation_budget.png
+│   │   ├── exp2_exploration_constant.png
+│   │   ├── exp3_maze_solving.png
+│   │   └── *.json
+│   └── llm_mcts/
+│       ├── comparison.png
+│       └── results.json
 
 ├── docs/
-│ ├── task1_report.md
-│ └── task2_report.md
+│   ├── task1_report.md
+│   └── task2_report.md
 
 └── notebooks/
-├── task1_demo.ipynb
-└── task2_analysis.ipynb
+    ├── task1_demo.ipynb
+    └── task2_analysis.ipynb
 
 🚀 Installation
 Prerequisites
